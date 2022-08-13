@@ -3,7 +3,6 @@ import Navigation from "./components/Navigation/Navigation";
 import { Routes, Route } from "react-router-dom";
 import Register from "./components/Navigation/Register";
 import Login from "./components/Navigation/Login";
-import Counter from "./components/Navigation/Counter";
 import axios from "axios";
 import { useState } from "react";
 import PostForm from "./components/Community/PostForm";

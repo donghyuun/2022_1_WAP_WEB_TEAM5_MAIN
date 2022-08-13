@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import "./MyPage.css";
 import { Link } from "react-router-dom";
-import { loginUser } from "../../_actions/user_action";
 
 //순서
 //db에 내 name의 mypage 정보 있으면 불러오고

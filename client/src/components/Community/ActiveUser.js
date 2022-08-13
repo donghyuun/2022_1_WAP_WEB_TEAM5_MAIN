@@ -29,8 +29,8 @@ function ActiveUser() {
         <button onClick={onReloadHandler}>RELOAD</button>
       </div>
       {userList &&
-        userList.map((user) => (
-          <div className="user">
+        userList.map((user,id) => (
+          <div key={id} className="user">
             <Link
               className="postName"
               to={{ pathname: `/mypage/${user.name}` }}

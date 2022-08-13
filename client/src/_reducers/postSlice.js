@@ -1,3 +1,4 @@
+//postPost 와 commentPost
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 
@@ -29,12 +30,12 @@ const postSlice = createSlice({
     builder
       .addCase(postPost.pending, (state) => {})
       .addCase(postPost.fulfilled, (state, action) => {
-        state.postSuccess = action.payload;
+        return action.payload.postSuccess;
       })
       .addCase(postPost.rejected, (state) => {})
       .addCase(commentPost.pending, (state) => {})
       .addCase(commentPost.fulfilled, (state, action) => {
-        state.commentSuccess = action.payload;
+       return action.payload.postSuccess;
       })
       .addCase(commentPost.rejected, (state) => {});
   },

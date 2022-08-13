@@ -10,8 +10,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import promiseMiddleware from "redux-thunk";
 import Reducer from "./_reducers";
 import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import counterReducer from "./components/features/counter_reducer";
+import { createRoot } from "react-dom/client";;
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import "./Register.css";
-import { registerUser } from "../../_actions/user_action";
+import { registerUser } from "../../_reducers/userSlice";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 

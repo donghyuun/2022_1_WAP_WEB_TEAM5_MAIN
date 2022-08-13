@@ -1,3 +1,4 @@
+//loginUser 와 registerUser
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 

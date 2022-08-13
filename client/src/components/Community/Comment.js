@@ -1,8 +1,9 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
+import { commentPost } from "../../_reducers/postSlice";
 import { useNavigate } from "react-router-dom";
-import { commentPost } from "../../_actions/post_action";
+
 import "./Comment.css";
 
 function Comment({ id }) {
@@ -43,7 +44,7 @@ function Comment({ id }) {
     };
     dispatch(commentPost(body)).then((res) => {
       console.log(res);
-      if (res.payload.payload.commentSuccess) {
+      if (res.payload.commentSuccess) {
         alert("댓글이 작성되었습니다.");
         window.location.reload();
       } else {

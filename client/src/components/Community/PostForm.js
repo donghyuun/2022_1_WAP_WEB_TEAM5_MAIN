@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { postPost } from "../../_actions/post_action";
+import { postPost } from "../../_reducers/postSlice";
 import "./PostForm.css";
 
 function Post() {
