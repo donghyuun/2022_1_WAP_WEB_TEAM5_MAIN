@@ -7,7 +7,6 @@ const initialState = [];
 export const loginUser = createAsyncThunk(
   "users/login",
   async (dataToSubmit) => {
-    console.log(dataToSubmit);
     const request = await axios
       .post("/api/users/login", dataToSubmit)
       .then((res) => res.data);
